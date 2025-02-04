@@ -1,0 +1,100 @@
+.navbar{
+    height:3.5rem ;
+    background-color: rgb(30, 136, 229);
+    width: 100%;
+    margin:0  ;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    box-shadow:  /* Strong shadow above navbar */
+              0 10px 30px rgba(0, 0, 0, 0.26); /* Soft shadow below navbar */
+    z-index: 1000;
+
+}
+.logo{
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    height: 3rem;
+    width: 3rem;
+    border: 3px solid white;
+    border-radius: 23px;
+    object-fit: cover;
+    margin-left: 4rem;
+}
+
+.desktopMenuImg{
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+    padding: 0.5rem;
+}
+.desktopmenuBtn{
+    min-width: 130px;
+    background-color: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    border-radius: 2rem;
+    margin-right: 3rem;
+}
+.desktopmenuBtn:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+.active{
+    color: #ffffff; /* Pure white */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ffffff;
+}
+
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 2.5rem;
+}
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right:2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+}
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin:0.25rem;
+    background: rgb(30,30,30);
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .mobMenu{
+        display:flex;
+    }
+    .desktopmenuBtn{
+        display: none;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .logo{
+        margin-left:0;
+    }
+    
+}
