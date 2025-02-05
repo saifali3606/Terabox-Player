@@ -42,6 +42,7 @@
     padding: 0 0.5rem;
     border-radius: 2rem;
     margin-right: 3rem;
+    cursor: pointer;
 }
 .desktopmenuBtn:hover{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
@@ -49,52 +50,49 @@
     0 0 30px rgba(255, 255, 255, 0.4);
   transform: scale(1.05);
 }
-.active{
-    color: #ffffff; /* Pure white */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                 0 0 20px rgba(255, 255, 255, 0.6),
-                 0 0 30px rgba(255, 255, 255, 0.4);
-    padding-bottom: 0.2rem;
-    border-bottom: 1px solid #ffffff;
+@media only screen and (max-width: 768px) {
+    /* Stack navbar items vertically on mobile */
+    .navbar {
+          /* Stack items vertically */
+        height: 4rem;
+        flex-direction: column;
+        padding: 1rem 1rem;  /* Adjust padding */
+        justify-content: center;  /* Center the items */
+    }
+
+    /* Adjust the logo for mobile */
+    .logo {
+        margin-left: 0rem;
+        margin-top: 1.8rem;
+        margin-bottom: 0.4rem;
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    /* Adjust the button to be full width on mobile */
+    .desktopmenuBtn {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        min-height: 40px;
+        color: black;
+        font-weight: 500;
+        font-size: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for contrast */
+        transition: all 0.3s ease-in-out;
+    }
+    .desktopmenuBtn:hover {
+        background-color: #f8f8f8; /* Slight gray tint on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow for pop effect */
+    }
+
+    /* Adjust icon size inside button */
+    .desktopMenuImg {
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
-.mobMenu{
-    display: none;
-    object-fit: cover;
-    height: 2.5rem;
-}
-.navMenu{
-    position: absolute;
-    top: 4rem;
-    right:2rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
-    min-width: 15rem;
-    background: rgb(40,40,40);
-    border-radius: 1rem;
-}
-.listItem{
-    color: white;
-    padding: 0.5rem 3rem;
-    margin:0.25rem;
-    background: rgb(30,30,30);
-    cursor: pointer;
-}
-@media screen and (max-width: 768px){
-    .mobMenu{
-        display:flex;
-    }
-    .desktopmenuBtn{
-        display: none;
-    }
-    .desktopMenu{
-        display: none;
-    }
-    .logo{
-        margin-left:0;
-    }
-    
-}
+
+
+

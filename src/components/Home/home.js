@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import PageTransition  from '../pageTransition';
 import './home.css';
-import pasteSign from '../../assets/copy.png';
+import pasteSign from '../../assets/paste-clipboard.png';
 
 const Home = () => {
     const [videoUrl, setVideoUrl] = useState("");
@@ -51,6 +51,7 @@ const Home = () => {
     //e.preventDefault();
     navigate("/video");
   };*/
+  
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent page reload
@@ -72,7 +73,7 @@ const Home = () => {
         
         <form id="videoForm" onSubmit={handleSubmit}>
             <label htmlFor="videoUrl">Enter Terabox Video URL:</label>
-            <input type="url" id="videoUrl" value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} placeholder="https://example.com/video" required/>
+            <input type="url" id="videoUrl" value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} placeholder="https://www.1024terabox.com/video" required/>
             <button className="paste-btn" onClick={pasteLink} type='button'> <img id="paste-sign" src={pasteSign} alt="Paste"/>  </button>
             <button className="submit" type="submit">Submit</button>
 

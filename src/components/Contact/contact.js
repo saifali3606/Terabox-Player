@@ -9,8 +9,8 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs
-          .sendForm('service_jhqy17l', 'template_oe3wa5s', form.current, {
-            publicKey: 'FcX-MqHZpz27gn1va',
+          .sendForm('service_bt3rm2l', 'template_0xoyd3i', form.current, {
+            publicKey: 'jRKkhZgOZH3MgSodg',
           })
           .then(
             () => {
@@ -31,7 +31,7 @@ const Contact = () => {
             <h1 className='contactPageTitle'>Send Message</h1>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
                 <input type='text' placeholder='Enter Your Name (Optional)' className='name' name='from_name'/>
-                <input type='email' placeholder='Enter Your Email' className='email' name='your_email'/>
+                <input type='email' placeholder='Enter Your Email' className='email' name='from_email'/>
                 <textarea placeholder='Your Message' className='msg' rows="5" name='message' ></textarea>
                 <button type='submit' className='submitBtn' value='send' >Submit</button>
             </form>
