@@ -29,15 +29,16 @@ const Video = () => {
                 <p>No video found. Please enter a valid URL.</p>
             )}
             </div>
-            <div class="tv-buttons">
+               <div class="tv-buttons">
                         <div class="tv-button"></div>
                         <div class="tv-button"></div>
                         <div class="tv-button"></div>
-                    </div>
+                </div>
+                <button className="back-button" onClick={() => navigate("/")}>
+                     ← Back
+                </button>
           </div>
-          <button className="back-button" onClick={() => navigate("/")}>
-              ← Back
-            </button>
+          
     
         </div>
         

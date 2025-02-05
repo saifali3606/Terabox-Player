@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, useLocation} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import './navbar.css';
 import logo from '../../assets/terabox-logo1.png';
 import homeIcon from '../../assets/arrow.png';
@@ -12,21 +12,20 @@ const Navbar = () => {
     
 
   const navigate = useNavigate();
-  const location = useLocation();
 
   const isContactPage = window.location.pathname === '/contact';
-  const isVideoPage = location.pathname === '/video';
+  
 
     const handleButtonClick = () => {
-        if(isContactPage || isVideoPage){
+        if(isContactPage){
             navigate("/");
         }
         else{
             navigate("/contact");
         }
     }
-    const buttonIcon = isVideoPage ? homeIcon : isContactPage ? homeIcon: contactImage;
-    const buttonText = isVideoPage ? 'Return to Home' : isContactPage ? 'Return to Home' : 'Contact Us';
+    const buttonIcon =  isContactPage ? homeIcon: contactImage;
+    const buttonText =  isContactPage ? 'Return to Home' : 'Contact Us';
 
   return (
     <nav className="navbar">

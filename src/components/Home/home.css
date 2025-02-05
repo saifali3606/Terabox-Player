@@ -56,6 +56,13 @@
   form input[type="url"]:focus {
     border-color: rgb(30, 136, 229);
   }
+  input[type="url"]::placeholder {
+    font-size: 16px; /* Adjust text size */
+    font-weight: 500; /* Medium bold */
+    font-style: normal;
+    opacity: 0.5; /* Transparency */
+}
+
   
    .submit {
     width: 100%;
@@ -113,8 +120,8 @@
     z-index: 10;
   }
   #paste-sign {
-    width: 20px; /* Adjust icon size */
-    height: 22px;
+    width: 26px; /* Adjust icon size */
+    height: 27px;
   }
   @media only screen and (max-width: 768px) {
     .container {

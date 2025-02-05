@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import PageTransition  from '../pageTransition';
 import './home.css';
-import pasteSign from '../../assets/paste-clipboard.png';
+import pasteSign from '../../assets/clipboard.png';
 
 const Home = () => {
     const [videoUrl, setVideoUrl] = useState("");

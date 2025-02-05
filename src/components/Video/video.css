@@ -1,12 +1,12 @@
 .container2 {
-    margin-top: 100px;
+    
     width: 100%;
     max-width: 850px; /* Slightly wider for a better frame */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 0;
-    padding: 20px;
+    margin: 0px auto 60px;
+    padding: 20px 20px 50px 20px;
     background: linear-gradient(to bottom, #222, #111); /* Subtle metallic background */
     border-radius: 20px; /* TV shape */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), /* Outer shadow for depth */
@@ -63,34 +63,40 @@
     background: #888;
   }
   .back-button {
-    position: relative;
-    margin-top: 0;
-    margin-left: 49%;
-    background-color: rgba(186, 186, 186, 0.6); /* Semi-transparent white */
-    color: white; /* White arrow */
-    border: 2px solid white; /* White border */
-    padding: 6px 15px;
-    font-size: 18px;
-    font-weight: bold;
+    position: absolute;
+    bottom: -25px; /* Move it below the TV frame */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button */
+    width: 80%; /* Adjusted width to match TV frame */
+    min-height: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #1e88e5, #1565c0); /* Gradient effect */
+    border: 3px solid #0d47a1; /* Matches TV frame */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Soft 3D effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Curved remote-like button */
     cursor: pointer;
-    border-radius: 5px;
-    z-index: 10;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow */
-    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
 }
 
 /* 🔄 Hover Effect */
 .back-button:hover {
-    background-color: rgba(255, 255, 255, 0.6); /* More visible on hover */
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* White gradient */
     color: black;
+    border: 3px solid #bbb; /* Soft border effect */
+    transform: translateX(-50%) scale(1.05); /* Slight grow effect */
 }
 
   @media only screen and (max-width: 768px) {
+
     /* Adjust the size of the video container for mobile */
     .container2 { 
         margin-top: 22vh;  /* Reduce top margin */
-        padding: 10px;  /* Reduce padding for mobile */
+        padding: 10px 10px 30px 10px;  /* Reduce padding for mobile */
     }
 
     /* Adjust the TV screen size */
@@ -111,10 +117,19 @@
         height: 10px; /* Smaller buttons for mobile */
     }
 
-    /* Adjust iframe (video player) size for smaller screens */
     .back-button {
-        margin-left: 73%;  /* Center the button */
-        
+        bottom: -26px; /* Slightly higher for smaller screens */
+        width: 90%;
+        min-height: 36px;
+        font-weight: 500;
+        font-size: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for contrast */
+        transition: all 0.3s ease-in-out;
+        border: none;
     }
+    .back-button:hover{
+        border: none;
+    }
+    
     
 }
