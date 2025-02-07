@@ -25,9 +25,7 @@ const Contact = () => {
       };
   return (
     <PageTransition>
-        <section id='contactPage'>
-        
-        <div id='contact'>
+        <section className='contactPage'>
             <h1 className='contactPageTitle'>Send Message</h1>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
                 <input type='text' placeholder='Enter Your Name (Optional)' className='name' name='from_name'/>
@@ -35,9 +33,7 @@ const Contact = () => {
                 <textarea placeholder='Your Message' className='msg' rows="5" name='message' ></textarea>
                 <button type='submit' className='submitBtn' value='send' >Submit</button>
             </form>
-            
-        </div>
-    </section>
+     </section>
     </PageTransition>
     
   )

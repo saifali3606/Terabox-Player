@@ -1,5 +1,5 @@
-#contactPage{
-    min-height: calc(100vh-7rem);
+.contactPage{
+    min-height: 100vh;
     width: 100%;
     border-radius: 10px;
     display: flex;
@@ -7,20 +7,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    
 }
-#contact{
-    min-height: calc(100vh-7rem);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-
-}
-
 .contactPageTitle{
     margin-top: 7.2vw;
     font-size: 3rem;
@@ -43,17 +31,17 @@
     width: 80vw;
     max-width: 38rem;
     margin-top: 50px;
-    margin-bottom: 8.5rem;
-    border: solid 4px rgb(30, 136, 229);
+    margin-bottom: 7.2vw;
+    border: solid 10px rgb(30, 136, 229);
     border-radius: 10px;
-    background-color:rgb(30, 136, 229);
+    background: linear-gradient(to bottom, #1e83dc, #1565c0);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
 .name,.email{
     font-size: medium;
     font-style: normal;
-    width: 90%;
+    width: 93%;
     max-width: 40rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
@@ -65,7 +53,7 @@
 .msg{
     font-size: large;
     font-style: normal;
-    width: 90%;
+    width: 93%;
     max-width: 40rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
@@ -89,14 +77,14 @@ textarea::placeholder, input::placeholder {
     bottom: -25px; /* Move it below the TV frame */
     left: 50%;
     transform: translateX(-50%); /* Center the button */
-    width: 80%; /* Adjusted width to match TV frame */
+    width: 93%; /* Adjusted width to match TV frame */
     min-height: 40px;
     color: black;
     font-weight: 600;
     font-size: 1rem;
-    background-color: white; /* Gradient effect */
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
     border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,14 +94,15 @@ textarea::placeholder, input::placeholder {
     
 }
 .submitBtn:hover {
-    background-color: white;
     color: black;
     transform: translateX(-50%) scale(1.05); /* Slight grow effect */
   }
 
   @media screen and (max-width:768px){
+    .contactPage{
+        min-height: 85vh;
+    }
     .contactPageTitle{
-        margin-top: 8.5rem;
         font-size: 2.2rem;
       }
     

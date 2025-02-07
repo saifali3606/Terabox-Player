@@ -12,6 +12,7 @@
     box-shadow:  /* Strong shadow above navbar */
               0 10px 30px rgba(0, 0, 0, 0.26); /* Soft shadow below navbar */
     z-index: 1000;
+    
 
 }
 .logo{
@@ -71,6 +72,7 @@
 
     /* Adjust the button to be full width on mobile */
     .desktopmenuBtn {
+        background: linear-gradient(to bottom, #ffffff, #f5f5f5);
         margin-left: 0;
         margin-right: 0;
         width: 100%;
@@ -78,12 +80,11 @@
         color: black;
         font-weight: 500;
         font-size: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for contrast */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for contrast */
         transition: all 0.3s ease-in-out;
     }
     .desktopmenuBtn:hover {
-        background-color: #f8f8f8; /* Slight gray tint on hover */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow for pop effect */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Increase shadow for pop effect */
     }
 
     /* Adjust icon size inside button */

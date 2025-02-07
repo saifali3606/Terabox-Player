@@ -97,6 +97,7 @@
     .container2 { 
         margin-top: 22vh;  /* Reduce top margin */
         padding: 10px 10px 30px 10px;  /* Reduce padding for mobile */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     }
 
     /* Adjust the TV screen size */
@@ -118,9 +119,9 @@
     }
 
     .back-button {
-        bottom: -26px; /* Slightly higher for smaller screens */
-        width: 90%;
-        min-height: 36px;
+        bottom: -55px; /* Slightly higher for smaller screens */
+        width: 96%;
+        min-height: 38px;
         font-weight: 500;
         font-size: 1rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for contrast */

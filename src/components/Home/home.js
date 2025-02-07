@@ -18,23 +18,7 @@ const Home = () => {
     return null;
   };
 
-  // Handle submit (play video)
-  /*const handleWatch = (event) => {
-         //event.preventDefault(); 
-            const urlInput = document.getElementById("videoUrl");
-
-            const url = urlInput.value.trim();
-            const videoId = extractVideoId(url);
-            console.log(videoId);
-            if (videoId) {
-                //window.location.href = play-video.html?q=${encodeURIComponent(url)};
-
-                const iframeElement = document.getElementById('videoFrame2');
-                iframeElement.src = 'https://www.1024terabox.com/sharing/embed?surl=' + videoId;
-            } else {
-               // errorMessage.style.display = 'block';
-            }
-  };*/
+  
 
   // Handle paste from clipboard
   const pasteLink = async () => {
@@ -47,10 +31,6 @@ const Home = () => {
   };
 
   const navigate = useNavigate();
-  /*const handleVideo = (e) => {
-    //e.preventDefault();
-    navigate("/video");
-  };*/
   
 
   const handleSubmit = (e) => {
