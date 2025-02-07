@@ -1,6 +1,5 @@
 import React, {useRef} from 'react';
 import './contact.css';
-import PageTransition  from '../pageTransition';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -24,7 +23,7 @@ const Contact = () => {
           e.target.reset();
       };
   return (
-    <PageTransition>
+
         <section className='contactPage'>
             <h1 className='contactPageTitle'>Send Message</h1>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
@@ -34,7 +33,6 @@ const Contact = () => {
                 <button type='submit' className='submitBtn' value='send' >Submit</button>
             </form>
      </section>
-    </PageTransition>
     
   )
 }

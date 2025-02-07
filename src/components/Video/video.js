@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation,useNavigate} from "react-router-dom";
-import PageTransition from "../pageTransition";
 import './video.css';
 
 const Video = () => {
@@ -10,7 +9,6 @@ const Video = () => {
   const videoId = queryParams.get("surl"); // ✅ Get video ID from URL
 
   return (
-    <PageTransition>
         <div className="container" id="container">
         
         <div className="container2" id="container">
@@ -42,7 +40,6 @@ const Video = () => {
     
         </div>
         
-    </PageTransition>
     
   );
 };

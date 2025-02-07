@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import { useNavigate } from "react-router-dom";
-import PageTransition  from '../pageTransition';
 import './home.css';
 import pasteSign from '../../assets/clipboard.png';
 
@@ -47,7 +46,7 @@ const Home = () => {
 
 
   return (
-    <PageTransition>
+    
         <div className="container" > 
         <h1>TeraBox Video player</h1>
         
@@ -60,7 +59,6 @@ const Home = () => {
         </form>
         
       </div>
-    </PageTransition>
   
     
     

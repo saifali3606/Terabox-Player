@@ -14,18 +14,19 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const isContactPage = window.location.pathname === '/contact';
+  const isVideoPage= window.location.pathname === '/video';
   
 
     const handleButtonClick = () => {
-        if(isContactPage){
+        if(isContactPage || isVideoPage){
             navigate("/");
         }
         else{
             navigate("/contact");
         }
     }
-    const buttonIcon =  isContactPage ? homeIcon: contactImage;
-    const buttonText =  isContactPage ? 'Return to Home' : 'Contact Us';
+    const buttonIcon =  (isContactPage || isVideoPage) ? homeIcon: contactImage;
+    const buttonText =  (isContactPage || isVideoPage) ? 'Return to Home' : 'Contact Us';
 
   return (
     <nav className="navbar">
