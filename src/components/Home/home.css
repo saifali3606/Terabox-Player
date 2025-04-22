@@ -142,6 +142,58 @@
     width: 26px; /* Adjust icon size */
     height: 27px;
   }
+  /* new line added */
+.extra-links {
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.instruction-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.link-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #1e88e5, #1565c0);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  min-width: 140px;
+  text-align: center;
+}
+
+.button-link:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #42a5f5, #1976d2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.plus-sign {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+  user-select: none;
+}
+
   @media only screen and (max-width: 768px) {
     .container {
       padding: 0px;
@@ -177,4 +229,34 @@
     .paste-btn{
       right: 17px;
     }
+    .extra-links {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      padding: 0 10px;
+    }
+    
+    .instruction-text {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      letter-spacing: 0.4px;
+    }
+    
+    .link-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .button-link {
+      width: 100%;
+      font-size: 0.95rem;
+      padding: 10px 20px;
+      min-width: unset;
+      border-radius: 20px;
+    }
+    
+    .plus-sign {
+      font-size: 1.5rem;
+      color: #444;
+    }
+    
   }

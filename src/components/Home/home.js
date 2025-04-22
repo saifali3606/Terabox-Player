@@ -17,7 +17,19 @@ const Home = () => {
             <button className="submit" type="submit">Submit</button>
 
         </form>
-        
+        <div className="extra-links">
+            <p className="instruction-text">Follow these easy steps to watch the video without ads(8-ads):</p>
+            <div className="link-row">
+              <a href="https://kiwi-browser-fast-quiet.en.softonic.com/android" target="_blank" rel="noopener noreferrer" className="button-link">
+                Kiwi Browser (for mobile only)
+              </a>
+              <span className="plus-sign">+</span>
+              <a href="https://chromewebstore.google.com/detail/2025-%E2%96%B7-terabox-video-link/dmmpmfnpmfdamkcijepcjkdnpjoakieo" target="_blank" rel="noopener noreferrer" className="button-link">
+                Extension to remove ads (for mobile and desktop)
+              </a>
+            </div>
+          </div>
+
       </div>
   
     
